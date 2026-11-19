@@ -6,32 +6,26 @@ O **Roboldo** é uma plataforma de robótica social interativa voltada para **ed
 
 ---
 
-## 🎯 Pilares do Ecossistema Roboldo
+## 🧭 Zonas de Projetos (Grupos de Pesquisa & Desenvolvimento)
 
-- **🖥️ Roboldo OS, Shell & SDK**: Plataforma em Flutter para execução segura de múltiplos aplicativos, gerenciamento de expressões faciais padronizadas e telemetria em tempo real.
-- **🛍️ Lojinha do Roboldo (App Store)**: Catálogo de aplicativos educacionais, jogos, pranchas de comunicação alternativa e utilitários de sistema (`RoboControl Studio`).
-- **🗣️ Inteligência Artificial & Voz Offline**: Conversação natural com IA (STT + LLM) integrada ao sintetizador neural offline **Piper TTS** (`pt-BR`) com sincronia labial (*lipsync*).
-- **⚡ Hardware, Sensores de Toque & Dual-ESP32**: Controle articulado de cabeça e braços, display DWIN, percepção tátil (sensores de toque), modelagem elétrica e segurança física (*E-Stop* / *Auto-Docking*).
-- **🗺️ SLAM & Movimentação Autônoma**: Mapeamento 2D (*Occupancy Grid*), fusão sensorial (LiDAR, Odometria e IMU), gerenciamento de Pontos de Interesse (POIs) e planejamento de trajetória.
+O ecossistema do Roboldo é organizado em **5 Zonas de Projetos** multidisciplinares (acompanhadas via [Milestones](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestones) e [Labels de Zona](https://github.com/ROBOLDO-UERN/Roboldo-Base/labels) no repositório central):
+
+| Zona / Grupo | Foco de Atuação | Painel de Tasks (Milestone) | Label de Filtro |
+| :--- | :--- | :--- | :--- |
+| 🗺️ **Zona 1: SLAM & Navegação** | Mapeamento 2D (*Occupancy Grid*), fusão sensorial (LiDAR, Odometria e IMU), *Path Planning*, desvio de obstáculos e POIs. | [Ver Tasks da Zona 1](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestone/1) | [`zona: slam`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22zona%3A+slam%22) |
+| 🗣️ **Zona 2: Voz & Expressividade** | Síntese de voz neural offline (**Piper TTS** `pt-BR`), sincronia labial (*lipsync* no display DWIN e Avatar Flutter), normalização de rostos e feedback sonoro. | [Ver Tasks da Zona 2](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestone/2) | [`zona: voz`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22zona%3A+voz%22) |
+| 🧠 **Zona 3: Inteligência Artificial & IHR** | Conversação natural com IA (STT + LLM local/cloud), personalidade educativa do Roboldo, emoções multimodais e interação humano-robô. | [Ver Tasks da Zona 3](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestone/3) | [`zona: ia`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22zona%3A+ia%22) |
+| ⚙️ **Zona 4: Mecânica, Elétrica & Hardware** | Modelagem CAD 3D e estrutura física, modelagem elétrica e BMS, arquitetura Dual-ESP32 (Cabeça + Braços), sensores de toque, cinemática/PID de motores e segurança física (*E-Stop*). | [Ver Tasks da Zona 4](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestone/4) | [`zona: mecanica-hardware`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22zona%3A+mecanica-hardware%22) |
+| 🎮 **Zona 5: Gamificação, Apps & Lojinha** | Projetos de gamificação educacional e inclusiva (TEA/CAA, *Roboldo Educa — Perguntas e Respostas*), novos Apps Core, `Roboldo SDK`, Launcher e **Lojinha do Roboldo**. | [Ver Tasks da Zona 5](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestone/5) | [`zona: gamificacao-apps`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22zona%3A+gamificacao-apps%22) |
 
 ---
 
-## 📦 Principais Repositórios e Frentes
+## 📦 Repositórios Centrais
 
-| Projeto | Descrição | Licença |
+| Repositório | Descrição | Licença |
 | :--- | :--- | :--- |
-| **[Roboldo-Base](https://github.com/ROBOLDO-UERN/Roboldo-Base)** | Repositório principal do ecossistema: App Flutter (*Roboldo Educa*), *RoboControl Studio* (`ambiente-configuracao`), SDK e [Roadmap completo nas Issues](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues). | `GPL-3.0` |
+| **[Roboldo-Base](https://github.com/ROBOLDO-UERN/Roboldo-Base)** | Repositório principal do ecossistema: App Flutter (*Roboldo Educa*), *RoboControl Studio* (`ambiente-configuracao`), SDK e [Central de Zonas e Issues](https://github.com/ROBOLDO-UERN/Roboldo-Base/milestones). | `GPL-3.0` |
 | **[Controlador-Roboldo](https://github.com/ROBOLDO-UERN/Controlador-Roboldo)** | Firmware e códigos de controle embarcado dos microcontroladores do Roboldo. | `GPL-3.0` |
-
----
-
-## 🤝 Equipe & Colaboração
-
-O projeto é desenvolvido por pesquisadores, estudantes e colaboradores do **LAR / UERN** divididos nas frentes de:
-1. **Arquitetura, SDK & Aplicativos (Flutter / Web / Loja)**
-2. **Hardware, Modelagem Elétrica & Firmware Embarcado (ESP32)**
-3. **Navegação Autônoma, Cinemática & SLAM**
-4. **Inteligência Artificial, Voz & Interação Humano-Robô (IHR)**
 
 ---
 
