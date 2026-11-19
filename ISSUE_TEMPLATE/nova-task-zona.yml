@@ -1,0 +1,58 @@
+name: 🎯 Nova Task de Zona / Projeto
+description: Criar uma nova tarefa para as Zonas de SLAM, Voz, IA, Mecânica/Hardware ou Gamificação/Apps
+title: "[Zona] Título descritivo da tarefa"
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: zona
+    attributes:
+      label: 🧭 Zona de Projeto (Grupo)
+      description: A qual grupo do ecossistema Roboldo esta tarefa pertence?
+      options:
+        - "🗺️ Zona 1: SLAM & Navegação Autônoma"
+        - "🗣️ Zona 2: Voz & Expressividade (Piper TTS / Lipsync)"
+        - "🧠 Zona 3: Inteligência Artificial & IHR"
+        - "⚙️ Zona 4: Mecânica, Elétrica & Hardware"
+        - "🎮 Zona 5: Gamificação, Apps & Lojinha"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cargo
+    attributes:
+      label: 👥 Cargo Recomendado
+      description: Qual perfil de membro da equipe deve liderar ou executar esta tarefa?
+      options:
+        - "🔬 Bolsista"
+        - "🤝 Voluntário"
+        - "🎓 Professor (Orientação / Arquitetura / Revisão)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: 📌 Contexto
+      description: Por que essa tarefa é importante para o Roboldo?
+    validations:
+      required: true
+
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: 🎯 Objetivo e Escopo
+      description: O que precisa ser modelado, desenvolvido ou testado?
+    validations:
+      required: true
+
+  - type: textarea
+    id: criterios
+    attributes:
+      label: ✅ Critérios de Aceitação
+      description: Lista de entregáveis para considerar a tarefa concluída
+      value: |
+        - [ ] Entregável 1
+        - [ ] Documentação atualizada
+        - [ ] Testado e validado
+    validations:
+      required: true
