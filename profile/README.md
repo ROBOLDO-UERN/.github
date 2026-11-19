@@ -29,4 +29,4 @@ O ecossistema do Roboldo é organizado em **5 Zonas de Projetos** multidisciplin
 
 ---
 
-📍 **Mossoró, RN — Brasil** | 🏛️ **LAR / UERN**
+📍 **Natal, RN — Brasil** | 🏛️ **LAR / UERN**
