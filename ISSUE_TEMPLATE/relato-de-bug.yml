@@ -1,0 +1,33 @@
+name: 🐛 Relato de Bug / Falha de Hardware ou Software
+description: Reportar um erro em aplicativo Flutter, servidor de voz, firmware ESP32 ou hardware do Roboldo
+title: "[Bug] Resumo do problema encontrado"
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: zona
+    attributes:
+      label: 🧭 Zona Afetada
+      options:
+        - "🗺️ Zona 1: SLAM & Navegação Autônoma"
+        - "🗣️ Zona 2: Voz & Expressividade"
+        - "🧠 Zona 3: Inteligência Artificial & IHR"
+        - "⚙️ Zona 4: Mecânica, Elétrica & Hardware"
+        - "🎮 Zona 5: Gamificação, Apps & Lojinha"
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: ⚠️ Descrição do Problema
+      description: O que aconteceu vs. o que deveria acontecer?
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: 🔄 Como Reproduzir
+      description: Passos para reproduzir o erro (ou condições da bancada/robô)
+    validations:
+      required: true
