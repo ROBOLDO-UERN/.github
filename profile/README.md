@@ -20,6 +20,18 @@ O ecossistema do Roboldo é organizado em **5 Zonas de Projetos** multidisciplin
 
 ---
 
+## 👥 Estrutura de Cargos da Equipe
+
+O projeto conta com três níveis de atuação integrados às **5 Zonas de Projetos** (detalhados em [`GOVERNANCE.md`](https://github.com/ROBOLDO-UERN/Roboldo-Base/blob/master/GOVERNANCE.md)):
+
+| Cargo | Team da Organização | Filtro de Tasks por Cargo | Responsabilidade Principal |
+| :--- | :--- | :--- | :--- |
+| 🎓 **Professores** | `@ROBOLDO-UERN/professores` | [`cargo: professor`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22cargo%3A+professor%22) | Coordenação geral, orientação acadêmica/científica, validação arquitetural e aprovação de releases. |
+| 🔬 **Bolsistas** | `@ROBOLDO-UERN/bolsistas` | [`cargo: bolsista`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22cargo%3A+bolsista%22) | Desenvolvimento dedicado, liderança técnica das Zonas, entregas de metas e apoio na revisão de PRs. |
+| 🤝 **Voluntários** | `@ROBOLDO-UERN/voluntarios` | [`cargo: voluntario`](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues?q=is%3Aopen+label%3A%22cargo%3A+voluntario%22) | Colaboração em tasks específicas das Zonas, criação de apps para a Lojinha, modelagem, testes e documentação. |
+
+---
+
 ## 📦 Repositórios Centrais
 
 | Repositório | Descrição | Licença |
@@ -29,4 +41,4 @@ O ecossistema do Roboldo é organizado em **5 Zonas de Projetos** multidisciplin
 
 ---
 
-📍 **Natal, RN — Brasil** | 🏛️ **LAR / UERN**
+📍 **Mossoró, RN — Brasil** | 🏛️ **LAR / UERN**
