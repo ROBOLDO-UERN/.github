@@ -20,8 +20,8 @@ O **Roboldo** é uma plataforma de robótica social interativa voltada para **ed
 
 | Projeto | Descrição | Licença |
 | :--- | :--- | :--- |
-| **[Roboldo-Base](https://github.com/ROBOLDO-UERN/Roboldo-Base)** *(ou [Misians/Roboldo-Base](https://github.com/Misians/Roboldo-Base))* | Repositório principal do ecossistema: App Flutter (*Roboldo Educa*), *RoboControl Studio* (`ambiente-configuracao`), SDK e Roadmap completo nas Issues. | `GPL-3.0` |
-| **[Controlador-Roboldo](https://github.com/ROBOLDO-UERN/Controlador-Roboldo)** *(ou [Misians/Controlador-Roboldo](https://github.com/Misians/Controlador-Roboldo))* | Firmware e códigos de controle embarcado dos microcontroladores do Roboldo. | `GPL-3.0` |
+| **[Roboldo-Base](https://github.com/ROBOLDO-UERN/Roboldo-Base)** | Repositório principal do ecossistema: App Flutter (*Roboldo Educa*), *RoboControl Studio* (`ambiente-configuracao`), SDK e [Roadmap completo nas Issues](https://github.com/ROBOLDO-UERN/Roboldo-Base/issues). | `GPL-3.0` |
+| **[Controlador-Roboldo](https://github.com/ROBOLDO-UERN/Controlador-Roboldo)** | Firmware e códigos de controle embarcado dos microcontroladores do Roboldo. | `GPL-3.0` |
 
 ---
 
