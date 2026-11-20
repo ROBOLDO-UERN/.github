@@ -1,16 +1,32 @@
-name: 🎯 Nova Task de Zona / Projeto
-description: Criar uma nova tarefa para as Zonas de SLAM, Voz, IA, Mecânica/Hardware ou Gamificação/Apps
-title: "[Zona] Título descritivo da tarefa"
+name: 🎯 Nova Task de Trabalho / Subsistema (ROBOLDO-UERN)
+description: Criar e identificar um novo trabalho, pesquisa ou tarefa vinculada à Organização e às Zonas do Roboldo
+title: "[Subsistema] Título descritivo do trabalho ou tarefa"
 labels: ["enhancement"]
 body:
   - type: dropdown
+    id: subsistema
+    attributes:
+      label: 🧩 Subsistema / Parte do Roboldo
+      description: A qual parte/repositório do ecossistema este trabalho pertence?
+      options:
+        - "🌐 Orbit — Controlador Geral & Orquestrador (Roboldo-Orbit)"
+        - "🔌 IoT & Firmware Embarcado em C/C++ (Roboldo-IoT-Firmware)"
+        - "🐍 Algoritmo de Controlador em Python (Controlador-Roboldo)"
+        - "🧠 IA, Voz & Movimento / SLAM em Python v1.0 & v2.0 (Roboldo-IA-Movimento)"
+        - "🎮 Jogos em Flutter, Apps & Lojinha (Roboldo-Base)"
+        - "🖥️ Tela Nextion/DWIN, Imagens & Rostos (Roboldo-Display-Nextion)"
+        - "⚙️ Mecânica CAD 3D & Elétrica (Roboldo-Hardware-CAD)"
+    validations:
+      required: true
+
+  - type: dropdown
     id: zona
     attributes:
-      label: 🧭 Zona de Projeto (Grupo)
-      description: A qual grupo do ecossistema Roboldo esta tarefa pertence?
+      label: 🧭 Zona de Projeto (Grupo de Pesquisa)
+      description: A qual Zona da organização ROBOLDO-UERN esta tarefa está vinculada?
       options:
         - "🗺️ Zona 1: SLAM & Navegação Autônoma"
-        - "🗣️ Zona 2: Voz & Expressividade (Piper TTS / Lipsync)"
+        - "🗣️ Zona 2: Voz & Expressividade (Piper TTS / Lipsync / Rostos)"
         - "🧠 Zona 3: Inteligência Artificial & IHR"
         - "⚙️ Zona 4: Mecânica, Elétrica & Hardware"
         - "🎮 Zona 5: Gamificação, Apps & Lojinha"
@@ -20,39 +36,49 @@ body:
   - type: dropdown
     id: cargo
     attributes:
-      label: 👥 Cargo Recomendado
-      description: Qual perfil de membro da equipe deve liderar ou executar esta tarefa?
+      label: 👥 Cargo Recomendado / Responsabilidade
+      description: Qual perfil de membro da equipe deve liderar ou executar este trabalho?
       options:
-        - "🔬 Bolsista"
-        - "🤝 Voluntário"
-        - "🎓 Professor (Orientação / Arquitetura / Revisão)"
+        - "🔬 Bolsista (Liderança técnica / Entrega de meta)"
+        - "🤝 Voluntário (Desenvolvimento de módulo / App / Testes)"
+        - "🎓 Professor (Orientação / Arquitetura / Homologação)"
+    validations:
+      required: true
+
+  - type: input
+    id: identificacao_trabalho
+    attributes:
+      label: 🏷️ Identificação do Trabalho (TCC, PIBIC, Artigo, Módulo v1.0/v2.0)
+      description: Informe o vínculo acadêmico ou código do trabalho na organização (ex. PIBIC 2026 - Controle PID, TCC Navegação v1.0, Sprint Lojinha)
+      placeholder: "Ex.: Trabalho IoT ESP32 / TCC / Meta Bolsista Zona 4"
     validations:
       required: true
 
   - type: textarea
     id: contexto
     attributes:
-      label: 📌 Contexto
-      description: Por que essa tarefa é importante para o Roboldo?
+      label: 📌 Contexto e Motivação
+      description: Por que este trabalho é importante para a montagem e evolução do Roboldo?
     validations:
       required: true
 
   - type: textarea
     id: objetivo
     attributes:
-      label: 🎯 Objetivo e Escopo
-      description: O que precisa ser modelado, desenvolvido ou testado?
+      label: 🎯 Objetivo e Escopo Técnico
+      description: O que precisa ser modelado, desenvolvido, integrado ou testado?
     validations:
       required: true
 
   - type: textarea
     id: criterios
     attributes:
-      label: ✅ Critérios de Aceitação
-      description: Lista de entregáveis para considerar a tarefa concluída
+      label: ✅ Critérios de Aceitação e Entregáveis
+      description: Checklist para considerar a tarefa concluída no Painel da Organização
       value: |
-        - [ ] Entregável 1
-        - [ ] Documentação atualizada
-        - [ ] Testado e validado
+        - [ ] Implementação / Modelagem concluída no repositório do subsistema
+        - [ ] Pipeline de CI/CD passando sem erros
+        - [ ] Documentação técnica atualizada
+        - [ ] Validado pela equipe da Zona e Professores orientadores
     validations:
       required: true

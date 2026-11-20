@@ -1,16 +1,25 @@
-## 🎯 Zona de Projeto e Cargo
-- **Zona de Projeto**: <!-- Ex: Zona 1 (SLAM), Zona 2 (Voz), Zona 3 (IA), Zona 4 (Mecânica/Hardware) ou Zona 5 (Gamificação/Apps) -->
-- **Cargo do Autor**: [ ] 🎓 Professor | [ ] 🔬 Bolsista | [ ] 🤝 Voluntário
-- **Issue Relacionada**: Closes #<!-- número da issue -->
+## 📋 Resumo da Entrega (Pull Request)
+
+Descreva brevemente as alterações realizadas neste subsistema do **Roboldo**:
+
+- **Issue / Trabalho Vinculado na Organização**: Closes #
+- **Zona de Projeto**: ( ) Zona 1: SLAM | ( ) Zona 2: Voz | ( ) Zona 3: IA | ( ) Zona 4: Mecânica/Hardware | ( ) Zona 5: Gamificação/Apps
+- **Cargo do Autor**: ( ) Professor | ( ) Bolsista | ( ) Voluntário
 
 ---
 
-## 📝 Descrição das Alterações
-<!-- Descreva de forma clara o que foi implementado, corrigido ou documentado -->
+## 🛠️ Tipo de Alteração
+- [ ] ✨ Nova Funcionalidade / Algoritmo (`feat`)
+- [ ] 🐛 Correção de Bug (`fix`)
+- [ ] 🔌 Firmware IoT / Hardware / CAD (`hardware`)
+- [ ] 🖥️ Interface / Tela Nextion / Jogos Flutter (`ui`)
+- [ ] 📝 Documentação / Artigo / Relatório (`docs`)
+- [ ] ⚙️ Configuração de CI/CD ou Refatoração (`chore`)
 
 ---
 
-## ✅ Checklist de Qualidade (CI/CD)
-- [ ] O código compila sem erros localmente e passou no pipeline do **GitHub Actions**.
-- [ ] A documentação ou diagramas da respectiva Zona foram atualizados (se aplicável).
-- [ ] Testado em simulador, bancada ou diretamente no hardware do **Roboldo** (se aplicável).
+## ✅ Checklist de Qualidade (LAR / UERN)
+- [ ] O código segue os padrões da organização **ROBOLDO-UERN** e passa no workflow de **CI/CD**.
+- [ ] A documentação (`README.md` ou comentários técnicos) foi atualizada.
+- [ ] Testado localmente / em bancada no laboratório (ou simulador).
+- [ ] Os responsáveis da equipe (`CODEOWNERS`) foram solicitados para revisão.

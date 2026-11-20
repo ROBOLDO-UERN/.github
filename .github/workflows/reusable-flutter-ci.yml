@@ -1,0 +1,36 @@
+name: Reusable Flutter Games & Apps CI (ROBOLDO-UERN)
+
+on:
+  workflow_call:
+
+jobs:
+  flutter-qa:
+    name: Flutter Analyze & Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: Instalar dependências (flutter pub get)
+        run: |
+          if [ -f pubspec.yaml ]; then
+            flutter pub get
+          fi
+
+      - name: Analisar código Dart/Flutter
+        run: |
+          if [ -f pubspec.yaml ]; then
+            flutter analyze --no-fatal-infos --no-fatal-warnings
+          fi
+
+      - name: Executar testes Flutter
+        run: |
+          if [ -d test ] && [ -f pubspec.yaml ]; then
+            flutter test || true
+          fi

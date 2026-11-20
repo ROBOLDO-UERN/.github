@@ -1,0 +1,22 @@
+name: Reusable Hardware CAD & Display Assets CI (ROBOLDO-UERN)
+
+on:
+  workflow_call:
+
+jobs:
+  assets-validation:
+    name: Validação de Estrutura, Documentação e Assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+
+      - name: Verificar presença de documentação obrigatória
+        run: |
+          test -f README.md || (echo "ERRO: README.md ausente!" && exit 1)
+          echo "README.md verificado com sucesso."
+
+      - name: Auditar tamanhos e formatos de arquivos
+        run: |
+          echo "Arquivos monitorados no repositório:"
+          find . -maxdepth 3 -not -path '*/.*'

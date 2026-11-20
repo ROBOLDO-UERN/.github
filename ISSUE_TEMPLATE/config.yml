@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🏛️ Painel Geral de Trabalhos & Tasks da Organização (GitHub Projects)
+    url: https://github.com/orgs/ROBOLDO-UERN/projects/6
+    about: Visualize todas as tasks, subsistemas e responsáveis centralizados na organização ROBOLDO-UERN.
+  - name: 🧭 Quadros das 5 Zonas de Projetos (SLAM, Voz, IA, Hardware e Apps)
+    url: https://github.com/orgs/ROBOLDO-UERN/projects
+    about: Acesse os quadros específicos de cada Zona de Pesquisa & Desenvolvimento do LAR / UERN.

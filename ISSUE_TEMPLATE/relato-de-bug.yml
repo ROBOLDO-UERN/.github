@@ -1,33 +1,35 @@
 name: 🐛 Relato de Bug / Falha de Hardware ou Software
-description: Reportar um erro em aplicativo Flutter, servidor de voz, firmware ESP32 ou hardware do Roboldo
-title: "[Bug] Resumo do problema encontrado"
+description: Reportar um problema em qualquer subsistema do Roboldo (Orbit, IoT, Python, Flutter, Nextion ou Mecânica)
+title: "[BUG] Descrição curta da falha"
 labels: ["bug"]
 body:
   - type: dropdown
-    id: zona
+    id: subsistema
     attributes:
-      label: 🧭 Zona Afetada
+      label: 🧩 Subsistema Afetado
       options:
-        - "🗺️ Zona 1: SLAM & Navegação Autônoma"
-        - "🗣️ Zona 2: Voz & Expressividade"
-        - "🧠 Zona 3: Inteligência Artificial & IHR"
-        - "⚙️ Zona 4: Mecânica, Elétrica & Hardware"
-        - "🎮 Zona 5: Gamificação, Apps & Lojinha"
+        - "🌐 Orbit — Controlador Geral (Roboldo-Orbit)"
+        - "🔌 IoT & Firmware C/C++ (Roboldo-IoT-Firmware)"
+        - "🐍 Controlador Python (Controlador-Roboldo)"
+        - "🧠 IA, Voz & Movimento Python (Roboldo-IA-Movimento)"
+        - "🎮 Jogos Flutter & Lojinha (Roboldo-Base)"
+        - "🖥️ Tela Nextion & Imagens (Roboldo-Display-Nextion)"
+        - "⚙️ Mecânica & Elétrica (Roboldo-Hardware-CAD)"
     validations:
       required: true
 
   - type: textarea
     id: descricao
     attributes:
-      label: ⚠️ Descrição do Problema
-      description: O que aconteceu vs. o que deveria acontecer?
+      label: 🔍 Descrição do Problema
+      description: O que aconteceu vs. o que era esperado?
     validations:
       required: true
 
   - type: textarea
     id: passos
     attributes:
-      label: 🔄 Como Reproduzir
-      description: Passos para reproduzir o erro (ou condições da bancada/robô)
+      label: 🔄 Passos para Reproduzir / Logs
+      description: Comandos executados, porta serial, placa utilizada ou logs de erro.
     validations:
       required: true
