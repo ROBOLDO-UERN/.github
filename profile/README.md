@@ -2,7 +2,7 @@
 
 # 🤖 ROBOLDO — Ecossistema de Robótica Social (LAR / UERN)
 
-**Laboratório de Automação e Robótica (LAR) • Universidade do Estado do Rio Grande do Norte (UERN)**  
+**Laboratório de Aprendizagem Robótica (LAR) • Universidade do Estado do Rio Grande do Norte (UERN)**  
 *Educação • Acessibilidade (TEA/CAA) • Interação Humano-Robô (IHR) • Inteligência Artificial • Navegação Autônoma*
 
 [![Painel Geral da Organização](https://img.shields.io/badge/🏛️_Project_%236-Central_Geral_de_Trabalhos-0969da?style=for-the-badge)](https://github.com/orgs/ROBOLDO-UERN/projects/6)
@@ -12,7 +12,7 @@
 
 </div>
 
----
+<br/>
 
 ## 🏗️ Arquitetura Modular do Ecossistema Roboldo
 
@@ -43,17 +43,17 @@ flowchart TB
     ORBIT <-->|"HAL / Telemetria"| CTRL
     ORBIT <-->|"Serial / IoT"| IOT
     CTRL <-->|"Comandos de Juntas"| IOT
-    IOT ---|"Montagem & Eletrônica"| CAD
+    IOT <br/>|"Montagem & Eletrônica"| CAD
 ```
 
----
+<br/>
 
 ## 🧩 Mapa de Repositórios, CI/CD Ao Vivo & Equipes Responsáveis (`CODEOWNERS`)
 
 Cada parte do Roboldo possui seu próprio repositório com **Branch Protection** na branch principal, revisão automática por equipe (`CODEOWNERS`) e testes automatizados:
 
 | Subsistema / Repositório | Stack Principal | Status CI/CD | Códigos de Trabalho | Equipes Responsáveis (`CODEOWNERS`) |
-| :--- | :--- | :---: | :--- | :--- |
+| :<br/> | :<br/> | :<br/>: | :<br/> | :<br/> |
 | 🌐 **[Roboldo-Orbit](https://github.com/ROBOLDO-UERN/Roboldo-Orbit)**<br><sub>Controlador Geral, Orquestrador Central, HAL, Shell e SDK</sub> | Python / Core / Multi | [![Orbit CI](https://github.com/ROBOLDO-UERN/Roboldo-Orbit/actions/workflows/ci.yml/badge.svg)](https://github.com/ROBOLDO-UERN/Roboldo-Orbit/actions) | `ORB-01` a `ORB-03` | `@zona-gamificacao-apps`<br>`@zona-mecanica-hardware`<br>`@professores` `@bolsistas` |
 | 🔌 **[Roboldo-IoT-Firmware](https://github.com/ROBOLDO-UERN/Roboldo-IoT-Firmware)**<br><sub>IoT & Firmware Embarcado (Dual-ESP32, PID, Sensores de Toque, E-Stop)</sub> | C / C++ (PlatformIO / ESP32) | [![IoT CI](https://github.com/ROBOLDO-UERN/Roboldo-IoT-Firmware/actions/workflows/ci.yml/badge.svg)](https://github.com/ROBOLDO-UERN/Roboldo-IoT-Firmware/actions) | `IOT-01` a `IOT-03` | `@zona-mecanica-hardware`<br>`@professores` `@bolsistas` |
 | 🐍 **[Controlador-Roboldo](https://github.com/ROBOLDO-UERN/Controlador-Roboldo)**<br><sub>Algoritmo de Controlador de Juntas/Braços e Serial/Bluetooth</sub> | Python (Pygame / PySerial) | [![Controlador CI](https://github.com/ROBOLDO-UERN/Controlador-Roboldo/actions/workflows/controlador-ci.yml/badge.svg)](https://github.com/ROBOLDO-UERN/Controlador-Roboldo/actions) | `CTRL-01` | `@zona-mecanica-hardware`<br>`@professores` `@bolsistas` |
@@ -62,7 +62,7 @@ Cada parte do Roboldo possui seu próprio repositório com **Branch Protection**
 | 🖥️ **[Roboldo-Display-Nextion](https://github.com/ROBOLDO-UERN/Roboldo-Display-Nextion)**<br><sub>Projeto da Tela Nextion/DWIN (`.HMI`/`.TFT`), Imagens de Rostos & Lipsync</sub> | Nextion HMI & Assets | [![Display CI](https://github.com/ROBOLDO-UERN/Roboldo-Display-Nextion/actions/workflows/ci.yml/badge.svg)](https://github.com/ROBOLDO-UERN/Roboldo-Display-Nextion/actions) | `DISP-01` | `@zona-voz` `@zona-ia`<br>`@zona-mecanica-hardware`<br>`@professores` |
 | ⚙️ **[Roboldo-Hardware-CAD](https://github.com/ROBOLDO-UERN/Roboldo-Hardware-CAD)**<br><sub>Modelagem Mecânica CAD 3D (`.STEP`/`.STL`), Chassi, Elétrica & BOM</sub> | CAD 3D & KiCad | [![Hardware CAD CI](https://github.com/ROBOLDO-UERN/Roboldo-Hardware-CAD/actions/workflows/ci.yml/badge.svg)](https://github.com/ROBOLDO-UERN/Roboldo-Hardware-CAD/actions) | `HW-01` • `CAD-01` | `@zona-mecanica-hardware`<br>`@professores` `@bolsistas` |
 
----
+<br/>
 
 ## 🏛️ Gestão Centralizada na Organização (GitHub Projects)
 
@@ -72,33 +72,33 @@ As tasks e identificações de trabalhos **não ficam presas a um único reposit
 > *Visão unificada de todas as 23 tasks com filtros por **Identificação do Trabalho**, **Subsistema / Parte**, **Zona de Projeto** e **Cargo**.*
 
 | Zona / Grupo de Pesquisa | Escopo Técnico | Quadro da Zona na Organização | Team no GitHub |
-| :--- | :--- | :--- | :--- |
+| :<br/> | :<br/> | :<br/> | :<br/> |
 | 🗺️ **Zona 1: SLAM & Navegação** | Mapeamento 2D (*Occupancy Grid*), fusão sensorial (LiDAR, Odometria e IMU), *Path Planning* e POIs. | [📋 Abrir Project Zona 1](https://github.com/orgs/ROBOLDO-UERN/projects/1) | `@ROBOLDO-UERN/zona-slam` |
 | 🗣️ **Zona 2: Voz & Expressividade** | Síntese de voz neural offline (**Piper TTS** `pt-BR`), sincronia labial (*lipsync*), tela Nextion e rostos. | [📋 Abrir Project Zona 2](https://github.com/orgs/ROBOLDO-UERN/projects/2) | `@ROBOLDO-UERN/zona-voz` |
 | 🧠 **Zona 3: Inteligência Artificial & IHR** | Conversação natural com IA (STT + LLM local/cloud), personalidade educativa do Roboldo e IHR. | [📋 Abrir Project Zona 3](https://github.com/orgs/ROBOLDO-UERN/projects/3) | `@ROBOLDO-UERN/zona-ia` |
 | ⚙️ **Zona 4: Mecânica, Elétrica & Hardware** | Modelagem CAD 3D, elétrica/BMS, firmware IoT C/C++ (Dual-ESP32), controlador Python, toque e *E-Stop*. | [📋 Abrir Project Zona 4](https://github.com/orgs/ROBOLDO-UERN/projects/4) | `@ROBOLDO-UERN/zona-mecanica-hardware` |
 | 🎮 **Zona 5: Gamificação, Apps & Lojinha** | Jogos educativos em Flutter (*Roboldo Educa*, TEA/CAA), controlador geral *Orbit*, SDK e **Lojinha**. | [📋 Abrir Project Zona 5](https://github.com/orgs/ROBOLDO-UERN/projects/5) | `@ROBOLDO-UERN/zona-gamificacao-apps` |
 
----
+<br/>
 
 ## 📋 Templates Oficiais para Novos Trabalhos (1-Click Setup)
 
 Vai começar um novo módulo, algoritmo de pesquisa ou jogo para o Roboldo? Utilize um dos **Templates Oficiais da Organização** (já configurados com CI/CD, linters, `.gitignore` e `CODEOWNERS`):
 
 | Template Oficial | Uso Recomendado | Status do Template |
-| :--- | :--- | :---: |
+| :<br/> | :<br/> | :<br/>: |
 | 🐍 **[`roboldo-template-python`](https://github.com/ROBOLDO-UERN/roboldo-template-python)** | Novos algoritmos em **Python** (IA, visão computacional, controle, voz ou SLAM) com `ruff` + `pytest`. | [![Template Python CI](https://github.com/ROBOLDO-UERN/roboldo-template-python/actions/workflows/ci.yml/badge.svg)](https://github.com/ROBOLDO-UERN/roboldo-template-python/actions) |
 | 🔌 **[`roboldo-template-iot-cpp`](https://github.com/ROBOLDO-UERN/roboldo-template-iot-cpp)** | Novos firmwares **IoT em C/C++** (PlatformIO / ESP32 / Arduino) com análise estática `cppcheck` e build `pio run`. | [![Template IoT CI](https://github.com/ROBOLDO-UERN/roboldo-template-iot-cpp/actions/workflows/ci.yml/badge.svg)](https://github.com/ROBOLDO-UERN/roboldo-template-iot-cpp/actions) |
 | 🎮 **[`roboldo-template-flutter-game`](https://github.com/ROBOLDO-UERN/roboldo-template-flutter-game)** | Novos **jogos educativos e apps em Flutter** prontos para publicação na **Lojinha do Roboldo** (`roboldo-app.json`). | [![Template Flutter CI](https://github.com/ROBOLDO-UERN/roboldo-template-flutter-game/actions/workflows/ci.yml/badge.svg)](https://github.com/ROBOLDO-UERN/roboldo-template-flutter-game/actions) |
 
----
+<br/>
 
 ## 👥 Estrutura de Cargos & Como Contribuir (Onboarding)
 
 O laboratório organiza seus membros em três níveis integrados às **5 Zonas de Projetos** (detalhes em [`GOVERNANCE.md`](https://github.com/ROBOLDO-UERN/.github/blob/main/GOVERNANCE.md)):
 
 | Cargo | Team da Organização | Permissão Base | Responsabilidade Principal |
-| :--- | :--- | :--- | :--- |
+| :<br/> | :<br/> | :<br/> | :<br/> |
 | 🎓 **Professores** | `@ROBOLDO-UERN/professores` | `Admin` / `Maintain` | Coordenação geral, orientação científica, validação arquitetural e homologação de releases. |
 | 🔬 **Bolsistas** | `@ROBOLDO-UERN/bolsistas` | `Write` / `Maintain` | Desenvolvimento dedicado, liderança técnica das Zonas, entregas de metas e revisão de PRs. |
 | 🤝 **Voluntários** | `@ROBOLDO-UERN/voluntarios` | `Triage` / `Write` | Colaboração em tasks das Zonas, criação de jogos para a Lojinha, modelagem 3D, testes e documentação. |
@@ -108,8 +108,8 @@ O laboratório organiza seus membros em três níveis integrados às **5 Zonas d
 2. **Crie uma Branch no Repositório do Subsistema**: Trabalhe em uma branch dedicada (`feat/nome-da-entrega` ou `fix/correcao`). A branch principal é protegida por **Branch Protection Rules**.
 3. **Abra um Pull Request**: O GitHub acionará automaticamente o **CI/CD** da organização e solicitará a revisão da equipe responsável configurada no `CODEOWNERS`.
 
----
+<br/>
 
 <div align="center">
-  <sub>🏛️ <b>Laboratório de Automação e Robótica (LAR)</b> — <b>Universidade do Estado do Rio Grande do Norte (UERN)</b> • Natal, RN, Brasil</sub>
+  <sub>🏛️ <b>Laboratório de Aprendizagem Robótica (LAR)</b> — <b>Universidade do Estado do Rio Grande do Norte (UERN)</b> • Natal, RN, Brasil</sub>
 </div>
