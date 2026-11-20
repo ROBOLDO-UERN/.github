@@ -8,7 +8,7 @@
 [![Painel Geral da Organização](https://img.shields.io/badge/🏛️_Project_%236-Central_Geral_de_Trabalhos-0969da?style=for-the-badge)](https://github.com/orgs/ROBOLDO-UERN/projects/6)
 [![Governança & Cargos](https://img.shields.io/badge/👥_Governança-Professores_•_Bolsistas_•_Voluntários-6f42c1?style=for-the-badge)](https://github.com/ROBOLDO-UERN/.github/blob/main/GOVERNANCE.md)
 [![Licença](https://img.shields.io/badge/Licença-GPL--3.0-2ea44f?style=for-the-badge)](https://github.com/ROBOLDO-UERN/Roboldo-Base/blob/master/LICENSE)
-[![Localização](https://img.shields.io/badge/📍_Mossoró,_RN-LAR_/_UERN-d93f0b?style=for-the-badge)](https://github.com/ROBOLDO-UERN)
+[![Localização](https://img.shields.io/badge/📍_Natal,_RN-LAR_/_UERN-d93f0b?style=for-the-badge)](https://github.com/ROBOLDO-UERN)
 
 </div>
 
@@ -111,5 +111,5 @@ O laboratório organiza seus membros em três níveis integrados às **5 Zonas d
 ---
 
 <div align="center">
-  <sub>🏛️ <b>Laboratório de Automação e Robótica (LAR)</b> — <b>Universidade do Estado do Rio Grande do Norte (UERN)</b> • Mossoró, RN, Brasil</sub>
+  <sub>🏛️ <b>Laboratório de Automação e Robótica (LAR)</b> — <b>Universidade do Estado do Rio Grande do Norte (UERN)</b> • Natal, RN, Brasil</sub>
 </div>
